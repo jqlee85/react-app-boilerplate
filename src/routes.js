@@ -1,49 +1,28 @@
-// import Write from "./components/Write/Write";
-// import Edit from "./components/Edit/Edit";
-// import About from "./components/About/About";
-// import Nouns from "./components/Nouns/Nouns";
-// import Pieces from "./components/Pieces/Pieces";
-// import Terms from "./components/Terms/Terms";
+import Home from "./components/Home/Home"
+import PageOne from "./components/PageOne/PageOne"
+import Post from "./components/Post/Post"
+import Posts from "./components/Posts/Posts"
 
-// const routes = [
-//   {
-//     path: "/",
-//     exact: true,
-//     component: Write
-//   },
-//   {
-//     path: "/write",
-//     exact: true,
-//     component: Write
-//   },
-//   {
-//     path: "/about",
-//     exact: true,
-//     props: {},
-//     component: About
-//   },
-//   {
-//     path: '/terms-and-privacy',
-//     exact: true,
-//     props: {},
-//     component: Terms
-//   },
-//   {
-//     path: '/nouns',
-//     exact: true,
-//     props: {},
-//     component: Nouns
-//   },
-//   {
-//     path: '/writing/',
-//     exact: true,
-//     props: {},
-//     component: Pieces
-//   },
-//   {
-//     path: '/writing/:pieceID',
-//     component: Edit,
-//   }
-// ];
+const routes = [
+  {
+    path: "/",
+    exact: true,
+    component: Home
+  },
+  {
+    path: "/page-one",
+    props: {},
+    component: PageOne
+  },
+  {
+    path: '/posts',
+    props: {},
+    component: Posts
+  },
+  {
+    path: '/post/:postID',
+    component: Post,
+  }
+]
 
-// export default routes
+export default routes
